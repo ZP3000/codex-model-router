@@ -1,0 +1,6 @@
+interface:
+  display_name: "Codex Model Router"
+  short_description: "Route multi-step Codex work between Sol and Luna"
+  default_prompt: "Use $codex-model-router to choose and apply a Sol or Luna route for this task."
+policy:
+  allow_implicit_invocation: true

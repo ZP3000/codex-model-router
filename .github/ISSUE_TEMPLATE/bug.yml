@@ -1,0 +1,51 @@
+name: Bug report
+description: Report a reproducible routing, validation, or packaging problem
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please remove credentials and private source content before submitting.
+  - type: textarea
+    id: observed
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior and the smallest relevant example.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OS, Codex/runtime version, installation source, and Skill version.
+      placeholder: |
+        OS:
+        Runtime:
+        Installation:
+        Skill version:
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: List the exact safe steps or prompt needed to reproduce the issue.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission checks
+      options:
+        - label: I removed credentials and private data.
+          required: true
+        - label: I searched existing issues for duplicates.
+          required: true
